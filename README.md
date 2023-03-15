@@ -8,6 +8,7 @@ Our whiteboard: https://www.figma.com/community/file/1217735385307984336
 
 
 UI Prototypes:
+
 <img width="831" alt="Screenshot 2023-03-15 at 10 19 22" src="https://user-images.githubusercontent.com/98890853/225238664-833dc052-15bd-4376-a69f-acb09932f5cd.png">
 
 <img width="712" alt="Screenshot 2023-03-15 at 10 20 03" src="https://user-images.githubusercontent.com/98890853/225238762-4f82bb68-7856-43eb-990b-be591ceaf8aa.png">
