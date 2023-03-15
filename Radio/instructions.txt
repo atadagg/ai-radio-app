@@ -1,0 +1,42 @@
+login process:
+1. login with spotify
+2. get the access token
+3. cache it in the browser
+4. send the access token to the backend
+
+function process:
+1. request current track data from spotify
+2. scrape the duration of the song, progress_ms, track name, artist name, album name()
+3. substract the progress from the duration
+4. set a timer for the remaining time
+5. send the track data to chat gpt api
+6. get the response from chat gpt api 
+7. send the response to front-end
+8. front-end uses text to speech api to play the response
+9. Wait for the timer to finish.
+10. when the timer is done, repeat the whole process
+
+
+problems:
+1. user stops the music unexpectedly(solution: if the song is the same song as the previous song, then don't do anything)
+2. user skips the song
+3. chat gpt is really slow
+2. I don't know how to set a timer for the remaining time
+3. I don't know how to send the track data to chat gpt api
+4. I don't know how to use text to speech api to play the response
+5. money(solution:if the user listens to the a song from the database play the response from our database instead of generating a new one)
+
+PROTIP: USE CHAT-GPT for coding
+
+
+Authorization:
+1. caching the access token in the browser
+2. authorizing it right there
+
+Logging out:
+1. delete the access token from the browser
+
+
+prompts:
+
+if it's the first track of the day, say hello etc,

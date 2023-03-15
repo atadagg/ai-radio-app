@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--
+        1. find out the current url
+        2. if the url contains the code snatch the code
+        3. send the code to the backend
+    -->
+    <script>
+        const url = window.location.href;
+        const hasCode = url.includes("?code=");
+        if (hasCode) {
+            const newUrl = url.split("?code=");
+            window.history.pushState({}, null, newUrl[0]);
+            const code = newUrl[1];
+            console.log(code);
+            fetch("http://localhost:3000/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ code }),
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log(data);
+                    window.opener.postMessage(data, "*");
+                    window.close();
+                });
+        } else {
+            console.log("error");
+        }
+        // test the code above
+    </script>
+</body>
+</html>
