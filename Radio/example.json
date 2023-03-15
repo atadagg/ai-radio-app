@@ -6,7 +6,7 @@
         },
         "href": "https://api.spotify.com/v1/me/tracks",
         "type": "collection",
-        "uri": "spotify:user:mfqy6b2ttnhm6s2odn1mo6paq:collection"
+        "uri": "spotify:user:${user}:collection"
     },
     "progress_ms": 142854,
     "item": {
