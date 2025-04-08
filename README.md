@@ -1,6 +1,8 @@
 # ai-radio-app
 
 
+This an old ass app. Built back in the days without LLMs by two product design freshmen
+
 Me and my friend worked on a dj ai assistant app/api for spotify. Unfortunately Spotify itself was quicker than us and released Spotify DJ February 22, 2023.
 
 
